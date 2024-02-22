@@ -8,3 +8,6 @@ __pycache__/
 
 .vscode/
 
+weights/my-lm_epochs-1000_v1.pth
+weights/my-lm_epochs-1000_v2.pth
+weights/my-lm_epochs-1000.pth
