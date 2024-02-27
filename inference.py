@@ -66,6 +66,7 @@ def generate(prompt: str, model: Transformer, tokenizer: LlamaTokenizerFast,
 if __name__ == "__main__":
    path = "../../mar-tokenizer"
    tokenizer_loaded = LlamaTokenizerFast.from_pretrained(path)
+   tokenizer_loaded.add_special_tokens({'pad_token': '[PAD]'})
    device = "cuda"
 
    arg = ModelArgs(dim=1024,
@@ -89,7 +90,7 @@ if __name__ == "__main__":
    generate(prompt=prompt,
             model=model,
             tokenizer=tokenizer_loaded,
-            max_tokens=10,
+            max_tokens=20,
             temperature=0.9,
             )
 

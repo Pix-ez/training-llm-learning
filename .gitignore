@@ -6,6 +6,8 @@ __pycache__/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+main.py
+test.ipynb
 .vscode/
 
 weights/my-lm_epochs-1000_v1.pth
